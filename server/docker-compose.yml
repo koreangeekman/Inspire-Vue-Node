@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    image: koreangeekman/inspire:latest
+    env_file:
+      - inspire-env
+    ports:
+      - "3011:3000"
+    restart: unless-stopped
